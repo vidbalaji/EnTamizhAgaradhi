@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.vidhyalearning.entamizhagaradhi.MainActivity">
+
+    <TextView
+        android:id="@+id/enterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="பொருள் தேவைப்படுகிற வார்த்தை:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/wordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#FFFF00"
+        android:hint="தமிழ் வார்த்தை எழுதுக"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="-81dp" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:background="#FFFF00"
+        android:onClick="findMeaning"
+        android:text="தேடுக" />
+
+    <TextView
+        android:id="@+id/meaningText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:scrollbars="horizontal|vertical"
+        android:selectAllOnFocus="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textIsSelectable="true"
+        android:textSize="18sp" />
+
+</LinearLayout>
